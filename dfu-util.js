@@ -486,7 +486,10 @@ var firmwareFile = null;
                         fw += fwarray[i].toString();
                     }
 
-                    if (pedalIdentifier.hasOwnProperty(fw)) {
+                    logInfo("Identifier: " + fw);
+                    uploadButton.classList.remove("hidden");
+
+                    /*if (pedalIdentifier.hasOwnProperty(fw)) {
                         pedalName = pedalIdentifier[fw][0];
                         pedalVersion = pedalIdentifier[fw][1];
                         logInfo("Detected pedal: " + pedalName + " v" + pedalVersion);
@@ -509,7 +512,7 @@ var firmwareFile = null;
                         //downloadButton.classList.remove("hidden");
                         //uploadButton.classList.remove("hidden");
                         //fwSection.classList.remove("hidden");
-                    }
+                    }*/
 
 
                 } catch (error) {
